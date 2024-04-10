@@ -13,7 +13,7 @@ function Header() {
   return (
     <Navbar className='border-b-2'>
         <Link className='self-center font-serif whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white' to='/'>
-            <span className='px-2 py-1 bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-400 rounded-lg text-white'>Arpit's</span>
+            <span className='px-2 py-1 bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-400 rounded-md shadow-xl text-white'>Arpit's</span>
             <span className='italic font-serif'>TechBlog</span>
             
         </Link>
