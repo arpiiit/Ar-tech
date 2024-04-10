@@ -34,8 +34,8 @@ function Signup() {
         return setErrormessage(data.message);
       }
       setLoading(false);
-      if(res.ok){
-        navigate('/sign-in')
+      if (res.ok) {
+        navigate("/sign-in");
       }
     } catch (error) {
       setErrormessage(error.message);
@@ -45,6 +45,7 @@ function Signup() {
 
   return (
     <div className="min-h-screen mt-20">
+      <div className="sm:text-4xl  mb-10 text-3xl items-center justify-center flex">Create an Account</div>
       <div className="flex gap-10 p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center">
         {/* left */}
         <div className="flex-1">
@@ -57,7 +58,7 @@ function Signup() {
             </span>
             <span className="italic font-serif">TechBlog</span>
           </Link>
-          <p className="text-sm mt-5">
+          <p className="text-sm font-serif italic mt-5">
             Explore my blog world and enhance new features to explore new things
             and upload new images that you like.
           </p>
@@ -109,7 +110,7 @@ function Signup() {
             </Button>
           </form>
           <div className="flex gap-2 text-sm mt-5">
-            <span>Have an account? </span>
+            <span className="italic font-serif">Have an account? </span>
             <Link to="/sign-in" className="text-blue-500">
               {" "}
               Sign in
